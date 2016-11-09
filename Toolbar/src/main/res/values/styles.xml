@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!-- toolbar（actionbar）颜色 -->
+        <item name="colorPrimary">#ff0</item>
+        <!-- 状态栏颜色 -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- 窗口的背景颜色 -->
+        <item name="android:windowBackground">@android:color/white</item>
+
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="actionOverflowMenuStyle">@style/LYJMenuStyle</item>
+
+    </style>
+
+
+    <style name="LYJMenuStyle" parent="@style/Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+        <item name="android:popupBackground">?attr/colorPrimary</item>
+
+
+
+    </style>
+
+
+
+    <style name="ToolBarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="actionMenuTextColor">#f59</item>
+
+        <item name="actionMenuTextAppearance">@style/AppTheme.actionMenuTextSize</item>
+    </style>
+
+    <style name="AppTheme.actionMenuTextSize" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Menu">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">normal</item>
+
+    </style>
+
+</resources>
